@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)](https://github.com/Sakurajima-Pang/game-collection/releases/tag/v1.0.0)
 
 一个基于 Python + Tkinter 开发的桌面游戏合集，包含三款经典益智游戏。
 
@@ -23,32 +24,42 @@
 - 📦 支持打包为独立可执行文件
 - 🖥️ Windows 安装程序（支持自定义安装路径）
 
-## 📦 安装与运行
+## 📥 下载与安装
 
-### 方式一：直接运行（需要Python环境）
+### ⭐ 方式一：下载安装程序（推荐）
+
+前往 [Releases](https://github.com/Sakurajima-Pang/game-collection/releases/tag/v1.0.0) 页面下载最新版本。
+
+1. 下载 `GameCollectionInstaller.exe`
+2. 双击运行安装程序
+3. 选择安装路径（默认：用户目录下的 GameCollection）
+4. 勾选是否创建桌面快捷方式和开始菜单快捷方式
+5. 点击"安装"按钮
+6. 安装完成后，从桌面或开始菜单启动游戏
+
+**优点：**
+- ✅ 无需安装Python环境
+- ✅ 一键安装，简单快捷
+- ✅ 自动创建快捷方式
+- ✅ 可自定义安装路径
+
+### 方式二：下载便携版
+
+前往 [Releases](https://github.com/Sakurajima-Pang/game-collection/releases/tag/v1.0.0) 页面下载 `GameCollection.exe`。
+
+- 无需安装，双击即可运行
+- 适合放在U盘等便携设备
+
+### 方式三：从源码运行
 
 ```bash
 # 克隆仓库
 git clone https://github.com/Sakurajima-Pang/game-collection.git
 cd game-collection
 
-# 运行游戏
+# 运行游戏（需要Python 3.8+）
 python main.py
 ```
-
-### 方式二：打包为可执行文件
-
-```bash
-# 安装 PyInstaller
-pip install pyinstaller
-
-# 运行打包脚本
-build.bat
-```
-
-打包完成后：
-- 主程序：`dist/GameCollection.exe`
-- 安装程序：`dist/GameCollectionInstaller.exe`
 
 ## 🎮 游戏操作
 
@@ -112,6 +123,11 @@ class MyGame(IGame):
 
 ## 📝 系统要求
 
+### 安装程序版本
+- Windows 10/11
+- 无需其他依赖
+
+### 源码运行
 - Python 3.8+
 - Windows / macOS / Linux
 - 无需额外依赖（仅使用Python标准库）
